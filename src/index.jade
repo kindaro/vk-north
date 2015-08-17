@@ -4,5 +4,11 @@ html(lang='en')
         include _include/head
     body
         header
-        main
+        main(ng-app='u' ng-controller='u_ctrl')
+            h1 {{1+2}}
+            h2 lalafa {{random[0]}} lalafa
+            ol(reversed)
+                li(ng-repeat='post in random') 1 {{post}}
+            ol(reversed)
+                li(ng-repeat='post in posts' ng-bind-html='post.text')
         footer
