@@ -7,6 +7,9 @@ html(lang='en')
         main(ng-app='u' ng-controller='u_ctrl')
             h1 {{1+2}}
             h2 lalafa {{random[0]}} lalafa
+            div.owner-picker
+                div.owner_id(contentEditable='True' ng-model='elem_owner_id') {{elem_owner_id}}
+                div.button.owner_id-push(ng-click='go()') Go!
             ol(reversed)
                 li(ng-repeat='post in random') 1 {{post}}
             ol(reversed)
