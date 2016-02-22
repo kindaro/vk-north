@@ -9,7 +9,7 @@ m.controller 'u_ctrl', ($scope) ->
                     VK.Api.call 'wall.get'
                         , 'owner_id': r.response[0].uid
                         , (r) ->
-                            $scope.posts = r.response
+                            $scope.posts = r.response[1..]
                             $scope.$apply()
         VK.init 'apiId': 5035099
         $scope.go()
