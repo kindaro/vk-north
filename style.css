@@ -1,0 +1,28 @@
+.button {
+  border: solid 1px #008000;
+  margin: 1rem;
+  padding: 1rem;
+  display: inline-block;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  height: 1em;
+}
+.button:hover {
+  background-color: rgba(0,255,0,0.1);
+}
+.field {
+  border: solid 1px #00f;
+  width: 20em;
+  margin: 1rem;
+  padding: 1rem;
+  display: inline-block;
+  height: 1em;
+}
+.field:hover {
+  background-color: rgba(0,0,255,0.1);
+}
